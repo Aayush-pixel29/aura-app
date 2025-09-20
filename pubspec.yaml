@@ -1,0 +1,34 @@
+name: aura_app
+description: "A Gen AI-powered companion for youth mental wellness."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Your added packages
+  provider: ^6.1.5+1
+  http: ^1.5.0
+  uuid: ^4.5.1
+  
+  cupertino_icons: ^1.0.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# The following section is for Flutter-specific configurations.
+flutter:
+  uses-material-design: true
+
+  # This is the font section you added, now in the correct place
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
