@@ -1,16 +1,26 @@
-# aura_app
+Project Title: Aura – AI Mental Wellness Companion
 
-A new Flutter project.
+Project Description:
+Aura is an innovative mobile application designed to support individuals struggling with mental health, social withdrawal, and chronic overthinking. Built as a competition project, Aura uses generative AI for deeply humanized interactions. The app allows users to express themselves by:
 
-## Getting Started
+Painting Feelings: Aura enables users to generate images that represent their emotional state, providing a visual way to communicate feelings when words are hard to find.
 
-This project is a starting point for a Flutter application.
+Talking It Out: The app leverages conversational AI to engage users in supportive, understanding dialogue. It interprets and responds to user's thoughts, offering comfort and personalized advice like a real companion.
 
-A few resources to get you started if this is your first Flutter project:
+Journaling Thoughts: Aura saves user journal entries, analyzes content for emotional patterns, and responds empathetically, helping users understand themselves better and track their mental wellness journey.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Key Technologies Used:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+React Native (Mobile development)
+
+Google Gemini Pro API (Conversational and generative AI)
+
+Firebase (User data, journal storage)
+
+Custom AI models (Emotion understanding)
+
+Project Link (Demo):
+https://aura-app-fe69f.web.app
+
+Why this project showcases my skill:
+Aura demonstrates my ability to build advanced mobile applications, integrate generative AI for tangible user benefits, and design empathetic user experiences. It reflects my expertise in both engineering and empathy-driven product development.
