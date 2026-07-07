@@ -2,10 +2,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  // NOTE: The IP address is special. 10.0.2.2 is used by the Android emulator
-  // to connect to the host machine's localhost (your computer). If you are
-  // running on the web or desktop, you might use '127.0.0.1' instead.
-  static const String _baseUrl = 'https://aura-app-dyeg.onrender.com'; // Use https
+  // Pointing to the new Firebase Cloud Functions backend!
+  // Assuming default region 'us-central1'
+  static const String _baseUrl = 'https://us-central1-aura-app-fe69f.cloudfunctions.net';
 
   // Method to generate an image by sending a prompt to the backend
   static Future<String> generateImage(String prompt) async {
