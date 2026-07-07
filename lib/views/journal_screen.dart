@@ -113,7 +113,7 @@ class JournalScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  _formatDate(creation.createdAt),
+                  _formatDate(creation.timestamp),
                   style: const TextStyle(color: Colors.white30, fontSize: 12),
                 ),
               ],
