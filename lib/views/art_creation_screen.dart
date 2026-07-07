@@ -51,7 +51,7 @@ class _ArtCreationScreenState extends State<ArtCreationScreen> {
     });
 
     try {
-      final imageUrl = await ApiService.generateImage(_promptController.text);
+      final imageUrl = await ApiService.generateMoodArt(_promptController.text);
       setState(() {
         _imageUrl = imageUrl;
         _isLoading = false;

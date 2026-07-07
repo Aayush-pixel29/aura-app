@@ -1,14 +1,4 @@
 {
-  "functions": {
-    "source": "functions",
-    "codebase": "default",
-    "ignore": [
-      ".venv",
-      ".git",
-      "firebase-debug.log",
-      "firebase-debug.*.log"
-    ]
-  },
   "hosting": {
     "site": "aura-app-fe69f",
     "public": "build/web",

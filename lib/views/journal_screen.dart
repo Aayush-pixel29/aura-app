@@ -121,14 +121,36 @@ class JournalScreen extends StatelessWidget {
             const SizedBox(height: 16),
             if (isArt)
               Expanded(
-                child: Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    image: DecorationImage(
-                      image: NetworkImage(creation.resultData),
-                      fit: BoxFit.cover,
-                    ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.network(
+                    creation.resultData,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Container(
+                        color: Colors.white.withOpacity(0.05),
+                        child: const Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.broken_image_outlined, color: Colors.white24, size: 40),
+                              SizedBox(height: 8),
+                              Text('Image failed to load', style: TextStyle(color: Colors.white24, fontSize: 12)),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                    loadingBuilder: (context, child, progress) {
+                      if (progress == null) return child;
+                      return Container(
+                        color: Colors.white.withOpacity(0.02),
+                        child: const Center(
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        ),
+                      );
+                    },
                   ),
                 ),
               )
@@ -148,6 +170,6 @@ class JournalScreen extends StatelessWidget {
   }
 
   String _formatDate(DateTime date) {
-    return "\${date.month}/\${date.day}/\${date.year}";
+    return "${date.month}/${date.day}/${date.year}";
   }
 }
